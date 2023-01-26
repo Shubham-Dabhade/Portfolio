@@ -1,0 +1,61 @@
+.outerCircle{
+    height: 130px;
+    width: 130px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+}
+.innerText{
+    position: absolute;
+    top:50px;
+    left:45px;
+    margin: auto;
+    font-size: 25px;
+}
+
+
+/* Define the size */
+.svg-pi {
+    width: 130px;
+    height: 130px;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    position:absolute;
+    top: 0;
+    left: 20;
+  }
+.extra{
+  position:absolute;
+  top: 0;
+  left: 20;
+}
+  
+  /* 
+   * Add the center and the radius using the size 
+   * and `stroke-width` values.
+   */
+  .svg-indicator-track,
+  .svg-indicator-indication {
+    cx: 65px;
+    cy: 65px;
+    r: 55px;
+  fill: transparent;
+  stroke-width: 8px;
+  stroke-linecap : round;
+  stroke-dasharray : 345.4px;
+}
+
+/* Some color to highlight the rings */
+.svg-indicator-indication {
+    stroke:url(#GradientColor);
+ /* DashArray = Track's or indicator's Circumference */
+    
+  }
+  
+
+.svg-indicator-track {
+    stroke: "black"
+  }
+  
